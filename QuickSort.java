@@ -31,6 +31,8 @@ public class QuickSort {
             int temp = vetor[esquerda];
             vetor[esquerda] = vetor[direita];
             vetor[direita] = temp;
+            
+            //Testanado atualizações no GitHub
         }
     }
 }

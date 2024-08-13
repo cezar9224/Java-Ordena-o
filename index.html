@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Manipulando o Dom</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <button class="Botao" onclick="mudarBotao()">PekenoDev</button>
+
+  <h1>Conversão de real pra Dolar</h1>
+
+  <section>
+
+    <input class="valor" type="text" placeholder="Digite um valor">
+    <br>
+    <input id="Valor" type="text" placeholder="Seu valor " >
+    <button class="converter" onclick="Convertion()">Converter</button>
+
+  </section>
+  
+  <script>
+    let titulo = document.querySelector('h1')
+
+
+    let inputValor = document.querySelector(".valor")
+    //  let mostrarvaloor = document.querySelector(".Valor")
+
+    function Convertion() {
+
+      let guardarValor = inputValor.value / 5.5
+      let mostrarvalor = Math.round(guardarValor)
+      let valorInvalido = "Ensira um valor Valido"
+     
+      document.getElementById("Valor").value = ` Seu Valor e ${mostrarvalor} Dolares`;
+
+
+      if (isNaN(mostrarvalor)){
+       
+       document.getElementById("Valor").value = `${valorInvalido} `;
+      }
+
+    }
+
+
+
+
+
+
+
+    function mudarBotao (){
+
+      alert('Seja bem vindo')
+      document.querySelector(".Botao").style.color = 'red'
+      document.querySelector(".Botao").style.backgroundColor = 'black'
+
+          // mudar.style.color = 'black'
+          // mudar.style.backgroundColor = "white"
+
+          
+    }
+
+
+
+    
+
+
+
+
+  </script>
+
+  <!-- <script src="script.js"></script> -->
+</body>
+
+</html>

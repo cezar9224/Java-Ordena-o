@@ -14,7 +14,9 @@
 body {
     height: 1100px;
     width: 100%;
-    background-image: url(energia-nuclear-ia-inovacao-futura-de-tecnologia-disruptiva.jpg);
+    /* background-color: rgb(32, 29, 29); */
+    /* background-image: url(energia-nuclear-ia-inovacao-futura-de-tecnologia-disruptiva.jpg); */
+    background-image: url(img/energia-nuclear-ia-inovacao-futura-de-tecnologia-disruptiva.jpg);
     background-position: center;
     background-size: cover;
     
